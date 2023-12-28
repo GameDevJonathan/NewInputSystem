@@ -35,6 +35,24 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""SwitchAction"",
+                    ""type"": ""Button"",
+                    ""id"": ""ea675a33-0c76-4e02-9d33-6cb91665c287"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""6df380bd-6d12-4074-80f1-157fd48d1cf9"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -147,6 +165,183 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ee8ece09-bfbd-4233-a4e9-f19ae3017a44"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SwitchAction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fecdac1e-c5d5-450f-a95d-5d703a6cbc1e"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Player3D"",
+            ""id"": ""53940e92-ecb9-484e-8191-a3cf549d3b50"",
+            ""actions"": [
+                {
+                    ""name"": ""Move3D"",
+                    ""type"": ""Value"",
+                    ""id"": ""505fc60c-601f-4481-8bd7-9e95b3d1fcdc"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""3DMovement"",
+                    ""id"": ""1de13bf5-1cde-4c9e-af91-ba7057c37536"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""8720d714-4c84-4f5f-8395-155be09318b3"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""7a13a441-0d7e-4dea-aa29-84fe5dc2a9a3"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""00d50dc7-7eda-49e3-9850-773b4ddcd272"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""84e1f43a-18e9-4f59-b64a-0d089deab789"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""bf4b5a91-d8a6-4c2a-a23b-587a5aa4491c"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""c3b39d35-a496-444b-89d9-d9f97c662b86"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""80fb8494-9497-4520-839b-3bdc5dbf7c74"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""4488fb63-b488-489a-a495-46d0d6c61456"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""07298822-c21a-4fc3-83cd-3ca7bf81d619"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move3D"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
+        },
+        {
+            ""name"": ""ChargeBar"",
+            ""id"": ""5dcc610a-5d1f-4b35-ab70-a4ccac677e4d"",
+            ""actions"": [
+                {
+                    ""name"": ""Charging"",
+                    ""type"": ""Button"",
+                    ""id"": ""14b7b8f1-51fe-4ab9-a274-fe1cb0cc7b2a"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""0b006e48-3b1b-4b84-a2c4-f6224a8961bc"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Charging"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -156,6 +351,14 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        m_Player_SwitchAction = m_Player.FindAction("SwitchAction", throwIfNotFound: true);
+        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        // Player3D
+        m_Player3D = asset.FindActionMap("Player3D", throwIfNotFound: true);
+        m_Player3D_Move3D = m_Player3D.FindAction("Move3D", throwIfNotFound: true);
+        // ChargeBar
+        m_ChargeBar = asset.FindActionMap("ChargeBar", throwIfNotFound: true);
+        m_ChargeBar_Charging = m_ChargeBar.FindAction("Charging", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -218,11 +421,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Player;
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
+    private readonly InputAction m_Player_SwitchAction;
+    private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
         private @PlayerInputActions m_Wrapper;
         public PlayerActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
+        public InputAction @SwitchAction => m_Wrapper.m_Player_SwitchAction;
+        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -235,6 +442,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Move.started += instance.OnMove;
             @Move.performed += instance.OnMove;
             @Move.canceled += instance.OnMove;
+            @SwitchAction.started += instance.OnSwitchAction;
+            @SwitchAction.performed += instance.OnSwitchAction;
+            @SwitchAction.canceled += instance.OnSwitchAction;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -242,6 +455,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Move.started -= instance.OnMove;
             @Move.performed -= instance.OnMove;
             @Move.canceled -= instance.OnMove;
+            @SwitchAction.started -= instance.OnSwitchAction;
+            @SwitchAction.performed -= instance.OnSwitchAction;
+            @SwitchAction.canceled -= instance.OnSwitchAction;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -259,8 +478,110 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Player3D
+    private readonly InputActionMap m_Player3D;
+    private List<IPlayer3DActions> m_Player3DActionsCallbackInterfaces = new List<IPlayer3DActions>();
+    private readonly InputAction m_Player3D_Move3D;
+    public struct Player3DActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public Player3DActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move3D => m_Wrapper.m_Player3D_Move3D;
+        public InputActionMap Get() { return m_Wrapper.m_Player3D; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(Player3DActions set) { return set.Get(); }
+        public void AddCallbacks(IPlayer3DActions instance)
+        {
+            if (instance == null || m_Wrapper.m_Player3DActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_Player3DActionsCallbackInterfaces.Add(instance);
+            @Move3D.started += instance.OnMove3D;
+            @Move3D.performed += instance.OnMove3D;
+            @Move3D.canceled += instance.OnMove3D;
+        }
+
+        private void UnregisterCallbacks(IPlayer3DActions instance)
+        {
+            @Move3D.started -= instance.OnMove3D;
+            @Move3D.performed -= instance.OnMove3D;
+            @Move3D.canceled -= instance.OnMove3D;
+        }
+
+        public void RemoveCallbacks(IPlayer3DActions instance)
+        {
+            if (m_Wrapper.m_Player3DActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IPlayer3DActions instance)
+        {
+            foreach (var item in m_Wrapper.m_Player3DActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_Player3DActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public Player3DActions @Player3D => new Player3DActions(this);
+
+    // ChargeBar
+    private readonly InputActionMap m_ChargeBar;
+    private List<IChargeBarActions> m_ChargeBarActionsCallbackInterfaces = new List<IChargeBarActions>();
+    private readonly InputAction m_ChargeBar_Charging;
+    public struct ChargeBarActions
+    {
+        private @PlayerInputActions m_Wrapper;
+        public ChargeBarActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Charging => m_Wrapper.m_ChargeBar_Charging;
+        public InputActionMap Get() { return m_Wrapper.m_ChargeBar; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ChargeBarActions set) { return set.Get(); }
+        public void AddCallbacks(IChargeBarActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ChargeBarActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ChargeBarActionsCallbackInterfaces.Add(instance);
+            @Charging.started += instance.OnCharging;
+            @Charging.performed += instance.OnCharging;
+            @Charging.canceled += instance.OnCharging;
+        }
+
+        private void UnregisterCallbacks(IChargeBarActions instance)
+        {
+            @Charging.started -= instance.OnCharging;
+            @Charging.performed -= instance.OnCharging;
+            @Charging.canceled -= instance.OnCharging;
+        }
+
+        public void RemoveCallbacks(IChargeBarActions instance)
+        {
+            if (m_Wrapper.m_ChargeBarActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IChargeBarActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ChargeBarActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ChargeBarActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ChargeBarActions @ChargeBar => new ChargeBarActions(this);
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
+        void OnSwitchAction(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+    }
+    public interface IPlayer3DActions
+    {
+        void OnMove3D(InputAction.CallbackContext context);
+    }
+    public interface IChargeBarActions
+    {
+        void OnCharging(InputAction.CallbackContext context);
     }
 }
