@@ -9,6 +9,7 @@ namespace Game.Scripts.LiveObjects
 {
     public class InteractableZone : MonoBehaviour
     {
+        private UpgradedLegacyInput _input;
         private enum ZoneType
         {
             Collectable,
@@ -72,6 +73,17 @@ namespace Game.Scripts.LiveObjects
 
         }
 
+
+        private void Start()
+        {
+            //initialze input action
+            _input = new UpgradedLegacyInput();
+            _input.Player.Enable();
+            //_input.Player.Interaction.performed += Interaction_performed;
+        }
+
+        
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player") && _currentZoneID > _requiredID)
@@ -125,7 +137,8 @@ namespace Game.Scripts.LiveObjects
             if (_inZone == true)
             {
 
-                if (Input.GetKeyDown(_zoneKeyInput) && _keyState != KeyState.PressHold)
+                //if (Input.GetKeyDown(_zoneKeyInput) && _keyState != KeyState.PressHold)
+                if (_input.Player.Interaction.WasPressedThisFrame() && _keyState != KeyState.PressHold)
                 {
                     //press
                     switch (_zoneType)
@@ -149,7 +162,8 @@ namespace Game.Scripts.LiveObjects
                             break;
                     }
                 }
-                else if (Input.GetKey(_zoneKeyInput) && _keyState == KeyState.PressHold && _inHoldState == false)
+                //else if (Input.GetKey(_zoneKeyInput) && _keyState == KeyState.PressHold && _inHoldState == false)
+                else if (_input.Player.Interaction.IsPressed() && _keyState == KeyState.PressHold && _inHoldState == false)
                 {
                     _inHoldState = true;
 
@@ -163,7 +177,8 @@ namespace Game.Scripts.LiveObjects
                     }
                 }
 
-                if (Input.GetKeyUp(_zoneKeyInput) && _keyState == KeyState.PressHold)
+                //if (Input.GetKeyUp(_zoneKeyInput) && _keyState == KeyState.PressHold)
+                if (_input.Player.Interaction.WasReleasedThisFrame() && _keyState == KeyState.PressHold)
                 {
                     _inHoldState = false;
                     onHoldEnded?.Invoke(_zoneID);
