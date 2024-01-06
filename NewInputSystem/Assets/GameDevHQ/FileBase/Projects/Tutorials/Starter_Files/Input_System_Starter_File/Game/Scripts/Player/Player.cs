@@ -21,6 +21,8 @@ namespace Game.Scripts.Player
         private CinemachineVirtualCamera _followCam;
         [SerializeField]
         private GameObject _model;
+        [SerializeField]
+        private UpgradedLegacyInput _inputActions;
 
 
         private void OnEnable()
@@ -46,6 +48,11 @@ namespace Game.Scripts.Player
 
             if (_anim == null)
                 Debug.Log("Failed to connect the Animator");
+            
+            _inputActions = new UpgradedLegacyInput();
+            _inputActions.Player.Enable();
+
+
         }
 
         private void Update()
@@ -58,8 +65,10 @@ namespace Game.Scripts.Player
         private void CalcutateMovement()
         {
             _playerGrounded = _controller.isGrounded;
-            float h = Input.GetAxisRaw("Horizontal");
-            float v = Input.GetAxisRaw("Vertical");
+            //float h = Input.GetAxisRaw("Horizontal");
+            float h = _inputActions.Player.Move.ReadValue<Vector2>().x;
+            //float v = Input.GetAxisRaw("Vertical");
+            float v = _inputActions.Player.Move.ReadValue<Vector2>().y;
 
             transform.Rotate(transform.up, h);
 
