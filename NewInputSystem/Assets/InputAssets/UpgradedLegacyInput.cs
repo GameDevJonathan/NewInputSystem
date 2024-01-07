@@ -169,6 +169,217 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Drone"",
+            ""id"": ""d02074ac-35b1-4381-baa0-6c32fb00b7e6"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""3d8924df-5478-4b10-ad71-b9741289344b"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Rotation"",
+                    ""type"": ""Value"",
+                    ""id"": ""51a00b07-32c6-4f17-b2f7-14659f386e89"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Thrusters"",
+                    ""type"": ""Value"",
+                    ""id"": ""58caa02d-6641-4cc1-9e49-d52d0fe3bdc5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""6878145a-ad76-47de-925e-b48599bdd738"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""4ed9b56a-590a-4eb1-8627-68d6f18334cd"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""f8e859a1-dd54-4469-bf42-6893f8ae9225"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""88756c3a-7679-4e21-a08c-fa54ed8bf960"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""923e38d2-689e-456b-bcf5-38c60538488b"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""ARROWS"",
+                    ""id"": ""33089697-ebf3-43e5-9ee0-30961ea9e4af"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""1df8fbff-13b0-4e55-bfec-6e8c54a6497a"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""80c423d0-aa7b-4f76-94e2-2174f07def6e"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""4a34a416-0863-432b-ac2a-d6a21b016a0d"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""fa56de93-b3aa-4597-a487-ba1beaf525a7"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""d92fe056-f5c9-4e27-9742-d3173bbfba1e"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Thrusters"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""e46dabf4-7b35-4ddb-ad1c-a494a097bc72"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Thrusters"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""17a6c0e7-e3dd-4640-809b-1ea9a1573284"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Thrusters"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""28258003-b444-4075-b844-1c2f18e174b9"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""fcb2a2cf-f940-45ed-916f-449e554a7bb1"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""d199cffe-4fa6-4b84-865c-e464e2153ccf"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -177,6 +388,11 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Interaction = m_Player.FindAction("Interaction", throwIfNotFound: true);
+        // Drone
+        m_Drone = asset.FindActionMap("Drone", throwIfNotFound: true);
+        m_Drone_Movement = m_Drone.FindAction("Movement", throwIfNotFound: true);
+        m_Drone_Rotation = m_Drone.FindAction("Rotation", throwIfNotFound: true);
+        m_Drone_Thrusters = m_Drone.FindAction("Thrusters", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -288,9 +504,77 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Drone
+    private readonly InputActionMap m_Drone;
+    private List<IDroneActions> m_DroneActionsCallbackInterfaces = new List<IDroneActions>();
+    private readonly InputAction m_Drone_Movement;
+    private readonly InputAction m_Drone_Rotation;
+    private readonly InputAction m_Drone_Thrusters;
+    public struct DroneActions
+    {
+        private @UpgradedLegacyInput m_Wrapper;
+        public DroneActions(@UpgradedLegacyInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Drone_Movement;
+        public InputAction @Rotation => m_Wrapper.m_Drone_Rotation;
+        public InputAction @Thrusters => m_Wrapper.m_Drone_Thrusters;
+        public InputActionMap Get() { return m_Wrapper.m_Drone; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(DroneActions set) { return set.Get(); }
+        public void AddCallbacks(IDroneActions instance)
+        {
+            if (instance == null || m_Wrapper.m_DroneActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_DroneActionsCallbackInterfaces.Add(instance);
+            @Movement.started += instance.OnMovement;
+            @Movement.performed += instance.OnMovement;
+            @Movement.canceled += instance.OnMovement;
+            @Rotation.started += instance.OnRotation;
+            @Rotation.performed += instance.OnRotation;
+            @Rotation.canceled += instance.OnRotation;
+            @Thrusters.started += instance.OnThrusters;
+            @Thrusters.performed += instance.OnThrusters;
+            @Thrusters.canceled += instance.OnThrusters;
+        }
+
+        private void UnregisterCallbacks(IDroneActions instance)
+        {
+            @Movement.started -= instance.OnMovement;
+            @Movement.performed -= instance.OnMovement;
+            @Movement.canceled -= instance.OnMovement;
+            @Rotation.started -= instance.OnRotation;
+            @Rotation.performed -= instance.OnRotation;
+            @Rotation.canceled -= instance.OnRotation;
+            @Thrusters.started -= instance.OnThrusters;
+            @Thrusters.performed -= instance.OnThrusters;
+            @Thrusters.canceled -= instance.OnThrusters;
+        }
+
+        public void RemoveCallbacks(IDroneActions instance)
+        {
+            if (m_Wrapper.m_DroneActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IDroneActions instance)
+        {
+            foreach (var item in m_Wrapper.m_DroneActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_DroneActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public DroneActions @Drone => new DroneActions(this);
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnInteraction(InputAction.CallbackContext context);
+    }
+    public interface IDroneActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnRotation(InputAction.CallbackContext context);
+        void OnThrusters(InputAction.CallbackContext context);
     }
 }
