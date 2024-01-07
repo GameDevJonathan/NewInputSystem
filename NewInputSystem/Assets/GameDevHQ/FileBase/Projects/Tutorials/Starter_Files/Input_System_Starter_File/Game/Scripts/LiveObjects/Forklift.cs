@@ -19,6 +19,8 @@ namespace Game.Scripts.LiveObjects
         private bool _inDriveMode = false;
         [SerializeField]
         private InteractableZone _interactableZone;
+        [SerializeField]
+        private UpgradedLegacyInput _input;
 
         public static event Action onDriveModeEntered;
         public static event Action onDriveModeExited;
@@ -26,6 +28,12 @@ namespace Game.Scripts.LiveObjects
         private void OnEnable()
         {
             InteractableZone.onZoneInteractionComplete += EnterDriveMode;
+        }
+
+        private void Start()
+        {
+            _input = new UpgradedLegacyInput();
+            _input.ForkLift.Enable();
         }
 
         private void EnterDriveMode(InteractableZone zone)
@@ -63,8 +71,10 @@ namespace Game.Scripts.LiveObjects
 
         private void CalcutateMovement()
         {
-            float h = Input.GetAxisRaw("Horizontal");
-            float v = Input.GetAxisRaw("Vertical");
+            //float h = Input.GetAxisRaw("Horizontal");
+            float h = _input.ForkLift.Movement.ReadValue<Vector2>().x;
+            //float v = Input.GetAxisRaw("Vertical");
+            float v = _input.ForkLift.Movement.ReadValue<Vector2>().y;
             var direction = new Vector3(0, 0, v);
             var velocity = direction * _speed;
 
@@ -80,9 +90,9 @@ namespace Game.Scripts.LiveObjects
 
         private void LiftControls()
         {
-            if (Input.GetKey(KeyCode.R))
+            if (_input.ForkLift.LiftControls.ReadValue<float>() > 0)
                 LiftUpRoutine();
-            else if (Input.GetKey(KeyCode.T))
+            else if (_input.ForkLift.LiftControls.ReadValue<float>() < 0)
                 LiftDownRoutine();
         }
 

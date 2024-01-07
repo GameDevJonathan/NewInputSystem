@@ -79,7 +79,6 @@ namespace Game.Scripts.LiveObjects
             //initialze input action
             _input = new UpgradedLegacyInput();
             _input.Player.Enable();
-            //_input.Player.Interaction.performed += Interaction_performed;
         }
 
         

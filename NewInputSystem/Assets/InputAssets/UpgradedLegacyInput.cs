@@ -380,6 +380,175 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 }
             ]
+        },
+        {
+            ""name"": ""ForkLift"",
+            ""id"": ""cd858eb0-0f8d-4154-82ef-d8c4adce87d7"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""Value"",
+                    ""id"": ""e732abed-bc2e-4199-acad-7014c940334e"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""LiftControls"",
+                    ""type"": ""Value"",
+                    ""id"": ""5cd03190-40ee-4ab0-88b2-18f911fb0c8b"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""09150cfb-0877-4720-8902-4f37ceb054fb"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f4ccfea2-f80c-4ded-9d16-6b51f06da033"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""a7816a46-f56e-48f1-85e2-8f927107e1ea"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""5b333fb1-8950-4e81-b7ad-1008f6aec543"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""e74e008b-a5d3-48f3-bbf5-a0c8363f76f1"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Arrows"",
+                    ""id"": ""58193610-0577-466b-aabc-8124d94a8804"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""9ff787ac-bdec-4696-8ce5-94d61a0c66cb"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""7c45179d-77be-40c3-8d63-a2c59a5d6d07"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""ae78a550-3240-42b0-872e-879f22f899a5"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""22675655-aeeb-4164-92a0-76ac66b6e739"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""fe7abe96-84bc-4e43-b1c3-c5c8c699ed77"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LiftControls"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""0fcbbf48-a703-4931-b85b-b65cd564f841"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LiftControls"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""f12346c5-8d6f-4ce7-9ff0-91923d2446d3"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LiftControls"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -393,6 +562,10 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         m_Drone_Movement = m_Drone.FindAction("Movement", throwIfNotFound: true);
         m_Drone_Rotation = m_Drone.FindAction("Rotation", throwIfNotFound: true);
         m_Drone_Thrusters = m_Drone.FindAction("Thrusters", throwIfNotFound: true);
+        // ForkLift
+        m_ForkLift = asset.FindActionMap("ForkLift", throwIfNotFound: true);
+        m_ForkLift_Movement = m_ForkLift.FindAction("Movement", throwIfNotFound: true);
+        m_ForkLift_LiftControls = m_ForkLift.FindAction("LiftControls", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -566,6 +739,60 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         }
     }
     public DroneActions @Drone => new DroneActions(this);
+
+    // ForkLift
+    private readonly InputActionMap m_ForkLift;
+    private List<IForkLiftActions> m_ForkLiftActionsCallbackInterfaces = new List<IForkLiftActions>();
+    private readonly InputAction m_ForkLift_Movement;
+    private readonly InputAction m_ForkLift_LiftControls;
+    public struct ForkLiftActions
+    {
+        private @UpgradedLegacyInput m_Wrapper;
+        public ForkLiftActions(@UpgradedLegacyInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_ForkLift_Movement;
+        public InputAction @LiftControls => m_Wrapper.m_ForkLift_LiftControls;
+        public InputActionMap Get() { return m_Wrapper.m_ForkLift; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ForkLiftActions set) { return set.Get(); }
+        public void AddCallbacks(IForkLiftActions instance)
+        {
+            if (instance == null || m_Wrapper.m_ForkLiftActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_ForkLiftActionsCallbackInterfaces.Add(instance);
+            @Movement.started += instance.OnMovement;
+            @Movement.performed += instance.OnMovement;
+            @Movement.canceled += instance.OnMovement;
+            @LiftControls.started += instance.OnLiftControls;
+            @LiftControls.performed += instance.OnLiftControls;
+            @LiftControls.canceled += instance.OnLiftControls;
+        }
+
+        private void UnregisterCallbacks(IForkLiftActions instance)
+        {
+            @Movement.started -= instance.OnMovement;
+            @Movement.performed -= instance.OnMovement;
+            @Movement.canceled -= instance.OnMovement;
+            @LiftControls.started -= instance.OnLiftControls;
+            @LiftControls.performed -= instance.OnLiftControls;
+            @LiftControls.canceled -= instance.OnLiftControls;
+        }
+
+        public void RemoveCallbacks(IForkLiftActions instance)
+        {
+            if (m_Wrapper.m_ForkLiftActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IForkLiftActions instance)
+        {
+            foreach (var item in m_Wrapper.m_ForkLiftActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_ForkLiftActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public ForkLiftActions @ForkLift => new ForkLiftActions(this);
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
@@ -576,5 +803,10 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnRotation(InputAction.CallbackContext context);
         void OnThrusters(InputAction.CallbackContext context);
+    }
+    public interface IForkLiftActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnLiftControls(InputAction.CallbackContext context);
     }
 }
