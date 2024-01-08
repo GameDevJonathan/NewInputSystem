@@ -70,7 +70,7 @@ namespace Game.Scripts.LiveObjects
                 CalculateTilt();
                 CalculateMovementUpdate();
 
-                if (Input.GetKeyDown(KeyCode.Escape))
+                if (_input.Drone.InteractionExit.WasPerformedThisFrame())
                 {
                     _inFlightMode = false;
                     onExitFlightmode?.Invoke();

@@ -19,6 +19,7 @@ namespace Game.Scripts.LiveObjects
         private int _activeCamera = 0;
         [SerializeField]
         private InteractableZone _interactableZone;
+        private UpgradedLegacyInput inputActions;
 
         public static event Action onHackComplete;
         public static event Action onHackEnded;
@@ -29,11 +30,17 @@ namespace Game.Scripts.LiveObjects
             InteractableZone.onHoldEnded += InteractableZone_onHoldEnded;
         }
 
+        private void Start()
+        {
+            inputActions = new UpgradedLegacyInput();
+            inputActions.Player.Enable();
+        }
+
         private void Update()
         {
             if (_hacked == true)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (inputActions.Player.Interaction.WasPerformedThisFrame())
                 {
                     var previous = _activeCamera;
                     _activeCamera++;
@@ -47,7 +54,7 @@ namespace Game.Scripts.LiveObjects
                     _cameras[previous].Priority = 9;
                 }
 
-                if (Input.GetKeyDown(KeyCode.Escape))
+                if (inputActions.Player.InteractionExit.WasPerformedThisFrame())
                 {
                     _hacked = false;
                     onHackEnded?.Invoke();

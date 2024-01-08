@@ -44,6 +44,15 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""InteractionExit"",
+                    ""type"": ""Button"",
+                    ""id"": ""7e7a4322-dce7-42a2-8912-3f6eda8c7849"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -159,12 +168,56 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""e2a3760f-4bd3-41ed-8648-f50663244fb2"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""f4f6aa6a-2369-4e98-806d-5ee966552073"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""99a02c62-cbf9-4cd6-b962-a62e7032fa60"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f343a970-fdde-455a-a974-eface9c54684"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InteractionExit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2628e8f3-dd72-42f5-b486-8557f9e95b2f"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InteractionExit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -200,6 +253,15 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""InteractionExit"",
+                    ""type"": ""Button"",
+                    ""id"": ""447a05ca-efd8-4341-a3ef-34ba71c08896"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -314,6 +376,17 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""8ba492c1-bc87-4ef3-bd34-2afa6588fc96"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""1D Axis"",
                     ""id"": ""d92fe056-f5c9-4e27-9742-d3173bbfba1e"",
                     ""path"": ""1DAxis"",
@@ -339,6 +412,39 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""name"": ""positive"",
                     ""id"": ""17a6c0e7-e3dd-4640-809b-1ea9a1573284"",
                     ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Thrusters"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""ff3513b1-2698-4971-9029-946ae7a4781d"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Thrusters"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""9c3eee6e-7365-4a2b-a5b1-fad673ade2f0"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Thrusters"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""4af4b12f-5dfe-4a90-8a0e-8078e298c3f1"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -378,6 +484,61 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""action"": ""Rotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""32a0ab50-d982-42ae-960e-b34b3152c52a"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""5d287f90-80b9-4be7-aac4-d477ec987766"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""b18bb3fd-5f01-406e-9321-f4a197bcd08c"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Rotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0ade90e9-086c-4e1e-8ef1-dbd60e4a77a8"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InteractionExit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f825217b-8837-4047-a1c9-f3e02cfd31cb"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InteractionExit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -402,6 +563,15 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""InteractionExit"",
+                    ""type"": ""Button"",
+                    ""id"": ""49c4d578-273b-45f4-aa44-6c75d973d16c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -516,6 +686,17 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": """",
+                    ""id"": ""32165ae3-283b-47a8-be36-6e2637b573d4"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
                     ""name"": ""1D Axis"",
                     ""id"": ""fe7abe96-84bc-4e43-b1c3-c5c8c699ed77"",
                     ""path"": ""1DAxis"",
@@ -547,6 +728,61 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
                     ""action"": ""LiftControls"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""1D Axis"",
+                    ""id"": ""5d098032-f406-44c0-bb9a-a449d3db6f31"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LiftControls"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""476a96c1-ee8b-480f-87e0-32174f11af6f"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LiftControls"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""620b0f40-6042-4d60-9e8c-6a322c69e1c2"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LiftControls"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7269237f-5794-4ab1-991c-67ce849c91e8"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InteractionExit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5da0fc68-f5dd-4b3c-b038-c6fcaea5cdd0"",
+                    ""path"": ""<Gamepad>/buttonEast"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""InteractionExit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -557,15 +793,18 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Interaction = m_Player.FindAction("Interaction", throwIfNotFound: true);
+        m_Player_InteractionExit = m_Player.FindAction("InteractionExit", throwIfNotFound: true);
         // Drone
         m_Drone = asset.FindActionMap("Drone", throwIfNotFound: true);
         m_Drone_Movement = m_Drone.FindAction("Movement", throwIfNotFound: true);
         m_Drone_Rotation = m_Drone.FindAction("Rotation", throwIfNotFound: true);
         m_Drone_Thrusters = m_Drone.FindAction("Thrusters", throwIfNotFound: true);
+        m_Drone_InteractionExit = m_Drone.FindAction("InteractionExit", throwIfNotFound: true);
         // ForkLift
         m_ForkLift = asset.FindActionMap("ForkLift", throwIfNotFound: true);
         m_ForkLift_Movement = m_ForkLift.FindAction("Movement", throwIfNotFound: true);
         m_ForkLift_LiftControls = m_ForkLift.FindAction("LiftControls", throwIfNotFound: true);
+        m_ForkLift_InteractionExit = m_ForkLift.FindAction("InteractionExit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -629,12 +868,14 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Interaction;
+    private readonly InputAction m_Player_InteractionExit;
     public struct PlayerActions
     {
         private @UpgradedLegacyInput m_Wrapper;
         public PlayerActions(@UpgradedLegacyInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Interaction => m_Wrapper.m_Player_Interaction;
+        public InputAction @InteractionExit => m_Wrapper.m_Player_InteractionExit;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -650,6 +891,9 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
             @Interaction.started += instance.OnInteraction;
             @Interaction.performed += instance.OnInteraction;
             @Interaction.canceled += instance.OnInteraction;
+            @InteractionExit.started += instance.OnInteractionExit;
+            @InteractionExit.performed += instance.OnInteractionExit;
+            @InteractionExit.canceled += instance.OnInteractionExit;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -660,6 +904,9 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
             @Interaction.started -= instance.OnInteraction;
             @Interaction.performed -= instance.OnInteraction;
             @Interaction.canceled -= instance.OnInteraction;
+            @InteractionExit.started -= instance.OnInteractionExit;
+            @InteractionExit.performed -= instance.OnInteractionExit;
+            @InteractionExit.canceled -= instance.OnInteractionExit;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -684,6 +931,7 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Drone_Movement;
     private readonly InputAction m_Drone_Rotation;
     private readonly InputAction m_Drone_Thrusters;
+    private readonly InputAction m_Drone_InteractionExit;
     public struct DroneActions
     {
         private @UpgradedLegacyInput m_Wrapper;
@@ -691,6 +939,7 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Drone_Movement;
         public InputAction @Rotation => m_Wrapper.m_Drone_Rotation;
         public InputAction @Thrusters => m_Wrapper.m_Drone_Thrusters;
+        public InputAction @InteractionExit => m_Wrapper.m_Drone_InteractionExit;
         public InputActionMap Get() { return m_Wrapper.m_Drone; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -709,6 +958,9 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
             @Thrusters.started += instance.OnThrusters;
             @Thrusters.performed += instance.OnThrusters;
             @Thrusters.canceled += instance.OnThrusters;
+            @InteractionExit.started += instance.OnInteractionExit;
+            @InteractionExit.performed += instance.OnInteractionExit;
+            @InteractionExit.canceled += instance.OnInteractionExit;
         }
 
         private void UnregisterCallbacks(IDroneActions instance)
@@ -722,6 +974,9 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
             @Thrusters.started -= instance.OnThrusters;
             @Thrusters.performed -= instance.OnThrusters;
             @Thrusters.canceled -= instance.OnThrusters;
+            @InteractionExit.started -= instance.OnInteractionExit;
+            @InteractionExit.performed -= instance.OnInteractionExit;
+            @InteractionExit.canceled -= instance.OnInteractionExit;
         }
 
         public void RemoveCallbacks(IDroneActions instance)
@@ -745,12 +1000,14 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
     private List<IForkLiftActions> m_ForkLiftActionsCallbackInterfaces = new List<IForkLiftActions>();
     private readonly InputAction m_ForkLift_Movement;
     private readonly InputAction m_ForkLift_LiftControls;
+    private readonly InputAction m_ForkLift_InteractionExit;
     public struct ForkLiftActions
     {
         private @UpgradedLegacyInput m_Wrapper;
         public ForkLiftActions(@UpgradedLegacyInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_ForkLift_Movement;
         public InputAction @LiftControls => m_Wrapper.m_ForkLift_LiftControls;
+        public InputAction @InteractionExit => m_Wrapper.m_ForkLift_InteractionExit;
         public InputActionMap Get() { return m_Wrapper.m_ForkLift; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -766,6 +1023,9 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
             @LiftControls.started += instance.OnLiftControls;
             @LiftControls.performed += instance.OnLiftControls;
             @LiftControls.canceled += instance.OnLiftControls;
+            @InteractionExit.started += instance.OnInteractionExit;
+            @InteractionExit.performed += instance.OnInteractionExit;
+            @InteractionExit.canceled += instance.OnInteractionExit;
         }
 
         private void UnregisterCallbacks(IForkLiftActions instance)
@@ -776,6 +1036,9 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
             @LiftControls.started -= instance.OnLiftControls;
             @LiftControls.performed -= instance.OnLiftControls;
             @LiftControls.canceled -= instance.OnLiftControls;
+            @InteractionExit.started -= instance.OnInteractionExit;
+            @InteractionExit.performed -= instance.OnInteractionExit;
+            @InteractionExit.canceled -= instance.OnInteractionExit;
         }
 
         public void RemoveCallbacks(IForkLiftActions instance)
@@ -797,16 +1060,19 @@ public partial class @UpgradedLegacyInput: IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnInteraction(InputAction.CallbackContext context);
+        void OnInteractionExit(InputAction.CallbackContext context);
     }
     public interface IDroneActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnRotation(InputAction.CallbackContext context);
         void OnThrusters(InputAction.CallbackContext context);
+        void OnInteractionExit(InputAction.CallbackContext context);
     }
     public interface IForkLiftActions
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnLiftControls(InputAction.CallbackContext context);
+        void OnInteractionExit(InputAction.CallbackContext context);
     }
 }
