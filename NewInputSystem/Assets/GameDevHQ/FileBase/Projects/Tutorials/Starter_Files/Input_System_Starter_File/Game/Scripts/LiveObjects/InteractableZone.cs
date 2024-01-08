@@ -174,7 +174,7 @@ namespace Game.Scripts.LiveObjects
                             PerformHoldAction();
                             break;           
                     }
-                }
+                }else 
 
                 //if (Input.GetKeyUp(_zoneKeyInput) && _keyState == KeyState.PressHold)
                 if (_input.Player.Interaction.WasReleasedThisFrame() && _keyState == KeyState.PressHold)
